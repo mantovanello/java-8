@@ -13,6 +13,7 @@ import java.time.YearMonth;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
 
 public class Main {
 
@@ -60,6 +61,8 @@ public class Main {
 		System.out.println("Add 3 months: " + localDateTime.plusMonths(3));
 		System.out.println("Add 5 years: " + localDateTime.plusYears(5));
 		
+		System.out.println(Period.between(localDate, localDate.plusMonths(3)));
+		System.out.println(Period.between(LocalDate.parse("2019-09-18"), LocalDate.parse("2019-12-19")));
 	}
 
 }
